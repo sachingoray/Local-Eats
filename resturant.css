@@ -1,0 +1,28 @@
+.resturant-header{
+    color: aliceblue;
+    background-color: #ff6b32;
+    text-align: center;
+    padding: 3rem;
+    font-weight: bold;
+    font-size: 28px;
+    .sub{
+        font-weight:300;
+    }
+}
+
+.resturant-card{
+    padding: 3rem;
+}
+
+ .restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  .restaurant-card .card {
+    width: 100%;
+    max-width: 300px;
+  }
