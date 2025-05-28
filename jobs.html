@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" >
-    <link rel="icon" type="image/png" href="logo image.png">
-    <title>Restaurants | Local Eats</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="logo image.png">
+  <title>Your Booking | Local Eats</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="jobs.css">
 </head>
 <body>
-  
+
+  <!-- Navbar -->
+
     <nav class="navigation">
         <div class="left-nav">
             <ul>
@@ -38,75 +42,41 @@
       
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <a class="dropdown-item" href="#">Home</a>
-          <a class="dropdown-item" href="#">About us</a>
+          <a class="about-us.html" href="#">About us</a>
           <a class="dropdown-item" href="#">Gallery</a>
-          <a class="dropdown-item" href="#">Contact</a>
+          <a class="staff.html" href="#">staff</a>
         </div>
       </div>
-
-
-
-
     </nav>
-<div class="members">STAFF - MEMBER</div>
-<!-- importing code form the w3schools -->
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="card2">
-  <img src="staff-image/sachin.JPG" alt="Sachin Shrestha" style="width:100%">
-  <h1>Sachin Shrestha</h1>
-  <p class="title">CEO & Founder of Local Eats</p>
-  <p>Kent Institute Australia  sachinshrestha1334@gmail.com</p>
- 
-  <a href="https://www.linkedin.com/in/sachin-shrestha-989756181/"><i class="fa fa-linkedin"></i></a>
-  <a href="https://www.facebook.com/sacina.srestha.658232"><i class="fa fa-facebook"></i></a>
-  <p><button>Contact</button></p>
-</div>
+<main>
+    <h2 class="heading">Current Openings</h2>
+    <div class="sub-heading"> 
+      We Are Hiring
+    </div>
+    <div class="job-listing">
+      <h3>Chef</h3>
+      <p>Looking for an experienced chef to join our kitchen team. Full-time. Minimum 2 years experience required.</p>
+    <button input type="button">Apply</button>
+    </div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div class="card2">
-  <img src="staff-image/manish 2.jpg" alt="Manish Lamichhane" style="width:100%">
-  <h1>Manish Lamichhane</h1>
-  <p class="title">Senior Developer</p>
-  <p>Kent Institute Australia lamaalish419@gmail.com</p>
-  <a href="#"><i class="fa fa-linkedin"></i></a>
-  <a href="#"><i class="fa fa-facebook"></i></a>
-  <p><button>Contact</button></p>
-</div>
+    <div class="job-listing">
+      <h3>Waiter</h3>
+      <p>Friendly and energetic individuals needed for front-of-house positions. Part-time roles available.</p>
+    <button input type="button">Apply</button>
+    </div>
+  </main>
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div class="card2">
-  <img src="staff-image/Samrat Jung Thapa.jpeg" alt="Samrat Jung Thapa" style="width:100%">
-  <h1>Samrat Jung Thapa</h1>
-  <p class="title">Cybersecurity officer</p>
-  <p>Kent Institute Australia samratthapa2024@gmail.com</p>
-  <a href="#"><i class="fa fa-linkedin"></i></a>
-  <a href="https://www.facebook.com/samrata.janga.thapa?mibextid=wwXIfr&mibextid=wwXIfr"><i class="fa fa-facebook"></i></a>
-  <p><button>Contact</button></p>
-</div>
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="card2">
-  <img src="staff-image/Sangam Bista.jpg" alt="Sangam Bista" style="width:100%">
-  <h1>Sangam Bista</h1>
-  <p class="title">Marketing Manager</p>
-  <p>Kent Institute Australia</p>
-  <a href="https://www.linkedin.com/in/sangam-bista-1b6450301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa fa-linkedin"></i></a>
-  <a href="https://www.instagram.com/sangambista_107?igsh=MXVkMDY1YW43eXN4eg%3D%3D&utm_source=qr"><i class="fa fa-facebook"></i></a>
-  <p><button>Contact</button></p>
-</div>
-    
-<!-- coding for footer -->
-<footer>
- <div class="second-footer">
+  
+
+  <footer>
+<div class="second-footer">
 
   <div class="column1">
     <div class="footer-heading1">Local Eats</div>
@@ -132,7 +102,7 @@
       <li><a href="resturants.html">Restaurants</a></li>
       <li><a href="vendor.html">Food Vendors</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="jobs.html">Jobs</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
     </ul>
   </div>
 
@@ -169,7 +139,30 @@
   </div>
   </div>
   
-</footer>
+
+ </footer>
+
+
+
+
+
+<!-- This line of code of Javascript--> 
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const date = document.getElementById("date").value;
+      const time = document.getElementById("time").value;
+
+      const message = `Thank you, ${name}. Your booking for ${date} at ${time} has been confirmed!`;
+      document.getElementById("bookingResult").innerHTML = `<div class="alert alert-success">${message}</div>`;
+    });
+  </script>
+<!-- This line is used for the mobile phone browser-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+
+
+

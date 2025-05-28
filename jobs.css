@@ -1,0 +1,39 @@
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #ff6b32;
+   padding: 5rem;
+}
+
+.sub-heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+
+}
+
+
+.job-listing, .staff-card {
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 10px;
+  box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.staff-card:nth-child(odd) {
+  background-color: #e8f5e9;
+}
+
+.staff-card:nth-child(even) {
+  background-color: #e3f2fd;
+}
+
+.button:hover{
+    background-color: green;
+}
+footer{
+    margin-top: 3rem;
+}
