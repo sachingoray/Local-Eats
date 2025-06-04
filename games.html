@@ -11,28 +11,47 @@
   <script src="script.js" defer></script>
 </head>
 <body onload="showWelcomeAlert('Games')">
+   <!-- navigation bar -->
+<nav class="navigation">
+        <div class="left-nav">
+            <ul>
+              
+                <li> <span class="trolley" aria-label="Shopping trolley icon">🛒</span></li>
+                <li> <span class="local">Local</span><span class="eats">Eats</span></li>
+            </ul>
+        </div>
+    
+
+    <!-- content for the navgiation and shortcuts for the diffrent pages -->
+            <div class="right-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                     <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+
+    <!-- creting a navigation bar for the mobile view -->
+    <div class="dropdownshow">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ☰
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Home</a>
+          <a class="dropdown-item" href="#">About us</a>
+          <a class="dropdown-item" href="#">Gallery</a>
+          <a class="dropdown-item" href="#">staff</a>
+        </div>
+      </div>
+    </nav>
 
 <header>
   <h1>Fun & Games</h1>
 </header>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Local Eats</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallary.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
 <section class="container mt-5">
   <h2 class="text-center">Interactive Food-Themed Games</h2>
@@ -107,7 +126,7 @@
     <ul>
       <li><a href="review.html">Reviews</a></li>
       <li><a href="booking.html">Schedule a Visit</a></li>
-      <li><a href="references.html">References</a></li>
+      <li><a href="refremce.htmll">References</a></li>
     </ul>
   </div>
 

@@ -1,0 +1,48 @@
+body {
+      background-color: #f8f9fa;
+      margin: 0;
+      
+      color: #333;
+    }
+    .project {
+      text-align: center;
+      color: #2c3e50;
+      padding: 4rem;
+      background-color: #ff6b32;
+      font-weight: bold;
+    }
+
+     .Resources, .references {
+        margin-top: 3rem;
+        text-align:center;
+
+     }
+     .para1, .para2{
+        padding: 1rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+     }
+
+.lines{
+    text-align: center;
+   list-style: none;
+  
+}
+.points{
+    border:  2px solid rgb(0, 0, 0);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  box-shadow: .5rem .5rem 1rem;
+}
+
+   
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+      color: #ff6b32;
+    }

@@ -269,16 +269,16 @@ body{
 /* css code for the staff page which have been omprted form w3shcool */
 /*  */
 .members{
-        color: #ff6b32;
+        color: #000000;
         font-size: 3rem;
         font-weight: bold;
-        background-color: rgb(251, 251, 251);
+        background-color: #ff6b32;
         padding: 4rem;
         text-align: center;
-        text-shadow: 1rem 1rem 4rem;
+        text-shadow: 1rem 1rem 2rem;
 }
 .members:hover{
-            color:#011628;
+            color:#ffffff;
         }
     
 .card2 {
